@@ -1,0 +1,57 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: streaming-platform-db
+    environment:
+      POSTGRES_DB: StreamingPlatformDB
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 8ETj7@Zv
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - streaming-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: streaming-platform-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=StreamingPlatformDB;Username=postgres;Password=8ETj7@Zv
+    ports:
+      - "5181:80"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - streaming-network
+    restart: unless-stopped
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: streaming-platform-frontend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:5181
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - streaming-network
+
+volumes:
+  postgres_data:
+
+networks:
+  streaming-network:
+    driver: bridge
