@@ -1,0 +1,8 @@
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.csproj.AssemblyReference.cache
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.GeneratedMSBuildEditorConfig.editorconfig
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.AssemblyInfoInputs.cache
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.AssemblyInfo.cs
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.csproj.CoreCompileInputs.cache
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.MvcApplicationPartsAssemblyInfo.cs
+F:\Users\Qamer Hassan\StreamingPlatform\Backend\StreamingPlatform.API\obj\Debug\net10.0\StreamingPlatform.API.MvcApplicationPartsAssemblyInfo.cache

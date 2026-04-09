@@ -1,0 +1,18 @@
+Smart Meeting & Productivity Assistant
+Goal: Build a web app that helps teams manage meetings, tasks, and productivity intelligently.
+Key Features:
+Meeting Scheduler
+Suggests optimal times based on participants’ calendars.
+Detects conflicts and proposes alternatives.
+Task Auto-Assignment
+After meetings, tasks can be auto-created from meeting notes using NLP (keyword extraction).
+Productivity Insights
+Track time spent in meetings vs productive hours.
+Visual dashboards showing bottlenecks.
+Reminders & Notifications
+Slack/email notifications for upcoming meetings, pending tasks, deadlines.
+Tech Stack:
+Frontend: Next.js + Tailwind CSS
+Backend: .NET 8 or Node.js + PostgreSQL
+AI/NLP: Python + FastAPI for processing meeting notes
+Real-time: WebSockets or SignalR for live updates
