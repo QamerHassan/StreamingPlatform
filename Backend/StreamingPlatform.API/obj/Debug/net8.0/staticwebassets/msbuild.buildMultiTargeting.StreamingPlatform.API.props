@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\StreamingPlatform.API.props" />
-</Project>
